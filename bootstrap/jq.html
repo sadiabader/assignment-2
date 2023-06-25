@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<style>
+.col-1{
+    margin-top: 5px;
+    margin-left: 10px;
+    position: relative;
+}
+.col-2{
+    margin-top: 200px;
+    margin-left: 900px;
+}
+</style>
+</head>
+<body>
+<button id="animat">Animate</button>
+<button id="stop"> stop Animate</button>
+<div class="container">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-1">
+       <img src="images/pngtree-football-championship-realistic-soccer-ball-isolated-png-image_2138589.jpg" height="150px"> 
+       
+    </div>
+    <div class="col-2">
+        <img src="images/istockphoto-1264159361-170667a.jpg">
+    </div>
+</div>
+</div>
+</div>
+    <script>
+$(document).ready(function(){
+    $('#animate').click(function(){
+        $('.col-1').animate({
+           top : '3000px' ,
+        }, 2000)
+        ('.col-1').animate({
+           'bottom-left': '0px' ,
+        }, 2000) 
+        ('.col-1').animate({
+           top: '400px' ,
+        }, 2000) 
+        ('.col-1').animate({
+           left: '0px' ,
+        }, 2000) 
+    })
+    $('#stop').click(function(){
+$('.col-1').stop(true)
+    })
+})
+
+
+
+    </script>
+</body>
+</html>

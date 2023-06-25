@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="student.message">submit</button>
+    <script>
+
+let obj = {
+    fname : "suhaib",
+    lname : "shazil",
+    classs : "4"
+}
+console.log(obj.classs)
+
+// Ecmascript-5
+let EmpData = []
+function employee(name, desigation,id){
+    this.Name = name,
+    this.Desigation = desigation,
+    this.Id = id
+}
+let emp1 = new employee("shazil", "4", 01)
+let emp2 = new employee("hammad", "8", 03)
+//console.log(emp, emp1)
+EmpData.push(emp1);
+console.log(EmpData);
+console.log(emp1, emp2);
+console.log(emp1)
+
+/*class personData {
+    constructor(fname, lname,id){
+        this .Fname = fname,
+        this .Lname = lname,
+        this .Id = id
+    }
+}
+let Data = new personData("suhaib", "shazil", 33)
+console.log(Data instanceof personData);
+//console.log(Data)*/
+
+let courses = ["php", "mysql", "js"];
+
+let advanceCourses = ["advanceJs", ...courses, "python", "Java"];
+console.log(advanceCourses);
+
+function add(p1, p2, p3){
+    return p1 + p2 + p3;
+}
+console.log(add(1, 2, 3))
+
+function add(p1, p2, ...p3){
+    return p1 + p2 + " " ,  p3;
+}
+console.log(add(1, 2, 2, 3, 4, 5));
+
+let personData = {
+    FirstName : "Suhaib",
+    LastName : "Shazil",
+    Class : "Js",
+}
+let string = JSON.stringify(personData);
+let ConvertToobject = JSON.parse(string);
+console.log(personData);
+ //document.write(string)
+ document.write(ConvertToobject);
+console.log(ConvertToobject);
+
+for(let i in personData){
+    document.write(i + ":" + personData[i] + "<br>")
+}
+let vehicleData = []
+function Vehicle(name, model, make, cc, price){
+    this.Name = name,
+    this.Model= model,
+    this.Make = make,
+    this.Cc = cc,
+    this.Price = price
+}
+let vehicle = new Vehicle("civic", 2022, "Honda", 1800, 650000);
+let truck = new Vehicle("shezor", 2022, "Toyota", 1800, 650000);
+vehicleData.push(vehicle)
+console.log(vehicleData)
+console.log(vehicle)
+console.log(truck)
+
+
+class students{
+    constructor(id, name, subject, classs){
+        this.Id = id,
+        this.Name = name,
+        this.Subject = subject,
+        this.classs = classs
+    }
+    message(){
+        console.log("Hello")
+    }
+    static anotherMsg(){
+        console.log("Sorry")
+    }
+}
+let student = new students(01, "ali", "js", "c2")
+student.message()
+students.anotherMsg()
+console.log(student)
+
+class parents{
+    constructor(id, name, subject, classs){
+        this.Id = id,
+        this.Name = name,
+        this.Subject = subject,
+        this.classs = classs
+    }
+    message(){
+        console.log("Hello")
+    }
+    static anotherMsg(){
+        console.log("Sorry")
+    }
+}
+
+class child extends parents {
+    constructor(id, name, subject, classs){
+        super(id, name, subject, classs)
+    }
+}
+let parent = new parents(01, "ali", "js", "c2");
+let childs = new child (02, "Hadi", "PHP", "B3");
+console.log(parent)
+console.log(childs)
+
+// synchronnous  Behaviour
+
+console.log("Hello");
+
+setTimeout(function(){
+    console.log("Hello again");
+}, 2000)
+
+// // setInterval(function(){
+// //     console.log("Hello world")
+
+// }, 1000)
+
+// callback function
+
+function fullName(firstName, lastName, cb){
+    console.log(firstName + " " + lastName)
+    cb();
+}
+
+function fatherName(){
+    console.log("M.Bader-ud-din")
+}
+fullName("Sadia", "Bader", fatherName);
+
+// task 2
+function adition(num1, num2, cb){
+ console.log(num1 + " " + num2)
+ cb();
+}
+
+function sub(){
+    console.log("5")
+}
+adition("4", "6", sub);
+
+
+// states: pending, resolve, reject
+// function / methods in promise is when resolve calls then(), if reject
+// calls catch()
+  // promises
+
+function prom(para){
+    return new Promise(function(resolve, reject){
+    if(para){
+        resolve("resolved");
+    }
+else{
+    reject("rejected")
+}
+})
+}
+// console.log()
+// let a = prom(false)
+// console.log(a)
+// prom(true).then(function(result){
+//     console.log(result)
+// })
+// prom(false).catch(function(err){
+//  console.log(err)
+// })
+// console.log(ConvertToobject)
+
+prom(true)
+   .then(result => console.log(result)).catch(err => console.log(err));                                                                                                                                                                          
+   
+   
+   
+   
+   
+   
+   </script>
+</body>
+</html>

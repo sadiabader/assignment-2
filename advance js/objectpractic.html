@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    
+    <script>
+        //  1
+let student = {
+Name : "shazil",
+Class : "5th",
+Rollno : 22
+}
+console.log(student)
+// 2
+let student1 = {
+Name : "shazil",
+Class : "5th",
+Rollno : 22
+}
+delete student1.Rollno;
+console.log(student1)
+
+// (3) the program objectsize
+
+
+/*Object.objsize = function(Myobj) {
+    let osize = 0, key;
+    for (key in Myobj) {
+        if (Myobj.hasOwnProperty(key)) osize++;
+    }
+    return osize;
+};
+
+let student3 = { 
+name : "shazil", 
+Class : "3rd", 
+Rollno : 11 };
+
+let objsize = Object.objsize(student3);
+console.log('Size of the current object : '+objsize);*/
+
+// 4
+
+let library = [
+{
+    title : "The Road Ahead",
+    author : "bil gates",
+    readingstatus : true
+},
+{
+title : "Walter Isaacson",
+    author : "Steve Jobs",
+    readingstatus : true
+},
+
+{
+title : "Mockingjay: The Final Book of The Hunger Games",
+    author : "Suzanne Collins",
+    readingstatus : true
+},
+]
+
+
+
+
+
+
+    </script>
+</body>
+</html>

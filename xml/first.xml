@@ -1,0 +1,35 @@
+
+<?xml version="1.0" encoding="UFF-8"?>
+<!--  
+<?xml-model href="first.xsd" type="aplication/xml" schema
+<?<xml-stylesheet href="first.css" type="text/css"?>
+<book>
+<title> JS </title>
+<author> Ali </author>
+<publication>Faisal publisher </publication>
+</book>
+ -->
+
+<?xml-stylesheet href="style.xsl" tupe="text/xsl"?>
+<bookstore>
+<book>
+<title> Harry poter </title>
+<author> J.K. Rowling </title>
+<year> 2001 </year>
+<price> 20.00 </price>
+</book>
+
+<book>
+<title> Harry poter </title>
+<author> J.K. Rowling <title>
+<year> 2001 <year>
+<price> 20.00 <price>
+</book>
+
+<book>
+<title> Harry poter <title>
+<author> J.K. Rowling <title>
+<year> 2001 <year>
+<price> 20.00 <price>
+</book>
+</bookstore>

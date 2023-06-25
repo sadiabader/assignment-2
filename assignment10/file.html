@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="first.js"></script>
+    <style>
+body{
+    background-color: palevioletred;
+    color: brown;
+}
+
+    </style>
+</head>
+<body>
+    <script>
+
+document.write("<h1> Task-1 </h1>");
+
+var num1 = prompt('Enter  number1');
+var num2 = prompt('Enter number2');
+var x = num1 * num2;
+alert(x);
+
+
+document.write("<h1> Task-2 </h1>");
+
+var number = prompt('Enter the number');
+if(number % 2 == 0){
+    document.write('number is even')
+}
+else{
+    document.write('number is odd')
+}
+
+document.write("<h1> Task-3 </h1>");
+
+ x = 5;
+ y = 4;
+ x = x + y;
+ y = x - y;
+ x = x - y;
+alert("x=" + x);
+alert("y=" + y);
+
+document.write("<h1> Task-4 </h1>");
+
+var y = prompt('Enter the number');
+var x = 1;
+var z;
+
+while(x <= 10){
+    z = y * x;
+    document.write(y + '*' + x + '=' + z + '<br>')
+    x++
+}
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

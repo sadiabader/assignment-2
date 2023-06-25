@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UFF-8"?>
+<!--  
+<bookstore>
+<book>Javascript</book>
+<book>Pyhton</book>
+<book>Maths</book>
+<book>HTML</book>
+
+<employeeData>
+<Name> Ebad </Name>
+<Email>aba@gmail </Email>
+<contact>12345</contact>
+</employeeData>
+</bookstore>
+ -->
+
+ <!-- document type defination (dtd)-->
+ <DOCTYPE bookstore [
+
+<!ELEMENT bookstore (title, author, publication, price, year)
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publication (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+
+]
+<!-- xml structure -->
+<bookstore><book>
+<title> Javascript </title>
+<author> John </author>
+<publication> KK </publication>
+<price> 100.00 </price>
+</book>
+
+<book>
+<title> Javascript </title>
+<author> John </author>
+<publication> KK </publication>
+<price> 100.00 </price>
+<year> 2002 </year>
+</book>
+</bookstore>
+
+<!-- xml file: message.xml -->
+<message>
+Hello world
+</message><!-- simple xml --><mail xmlns="http://wwww.abc.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:SchemaLocation="http://www.abc.com mail.xsd"><to> John </to><from> Jordan </from><header> sheduler </header><body> 3rd March Monday 7:30 PM  board meating!</body></mail>
+
+
+
+
+
+
+

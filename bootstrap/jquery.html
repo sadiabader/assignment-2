@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=10">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<style>
+.container{
+    border: 2px solid blue;
+background-color: aqua;
+color: black;
+padding: 30px;
+width: 400px;
+position: relative;
+}
+.box{
+    border: 2px dotted orangered;
+background-color: palevioletred;
+color: brown;
+padding: 50px;
+width: 500px;
+position: relative;   
+}
+
+
+
+</style>
+</head>
+<body>
+   <!-- <button id="hide"> Hide </button>
+<button id="show"> Show </button> -->
+<button id="animate"> Animate </button>
+<button id="stop"> Stop Animate </button>
+<button id="addclass"> Add Class</button>
+<button id="removeclass"> Remove Class </button>
+<button id="toggleclass"> Toggle Class </button>
+<button id="setname"> Set Name </button>
+
+
+      <div class="container">
+<h1 class="item-1"> Aptech Learning </h1>
+<h1 id="item-2"> Computer courses</h1>
+<p class="item-3">Lo pariatur eos, hic,<br> praesentium dignissimos <br>consectetur ad <br>consequatur iste?</p>
+      </div>
+<br>
+
+
+<input type="text" id="fname">
+<input type="text" id="lname">
+<input type="submit" id="submit">
+
+
+<script>
+$(document).ready(function(){
+   // console.log('Dear student')
+//$('.item-1,.item-3,#item-2').css({'border' : '2px solid aqua','background-color' : 'black','color' : 'aqua','padding' : '5px','text-align' : 'center'})
+
+
+/*$('#hide').click(function(){
+    $('#item-2').hide('slow')
+})
+$('#show').click(function(){
+    $('#item-2').show('slow')
+})
+$('#toggle').click(function(){
+    $('.container').toggle(2000, function(){
+    alert('the container has been hidden')
+    })
+})*/
+
+
+/*$('#hide').click(function(){
+    $('.container').fadeToggle(2000)
+})
+$('#show').click(function(){
+    $('.container').fadeTo(2000, 0.8)
+})*/
+/*$('#toggle').click(function(){
+    $('.container').hide(2000)
+    })*/
+
+
+/*$('#hide').mouseenter(function(){
+    $('.container').show(2000)
+})
+$('#hide').mouseleave(function(){
+    $('.container').hide(2000)
+})*/
+
+/*$('#show').on({
+    mouseenter:function(){
+    $('.container').css('backgound-color', 'brown')
+    },
+mouseleave: function(){
+    $('.container').css('background-color', 'gray')
+},
+
+click: function(){
+    $('.container').css('background-color', 'yellow')
+    },
+
+});*/
+
+$('#animate').click(function(){
+    $('.container').animate({
+        top : '300px',
+    }, 2000)
+ 
+    $('.container').animate({
+        left : '300px',
+        fontSize : '30px',
+    }, 2000)
+ 
+    $('.container').animate({
+        top : '0px',
+        fontSize : '15px',
+    }, 2000, function(){
+        $(this).css({
+            'color' : 'brown',
+            'background-color' : 'pink',
+        })
+    })
+    $('.container').animate({
+        left : '0px'
+    }, 2000)
+
+})
+
+$('#stop').click(function(){
+    $('.container').stop(true, true)
+})
+
+//var text = $('body').html()
+//console.log(text);
+$('#submit').click(function(){
+    var fname = $('#fname').val()
+    var lname = $('#lname').val()
+   // fname = fname.val()
+  //  lname = lname.val()
+   // alert(fname + " " + lname);
+    $('.item-1').html("<h5>" + fname + " " + lname + "</h5>")
+    //$('.item-3').html(lname)
+})
+
+
+//add class
+$('#addclass').click(function(){
+    $('.container').addClass('box')
+})
+//remove class
+$('#removeclass').click(function(){
+    $('.container').removeClass('box')
+})
+//toggle class
+$('#toggleclass').click(function(){
+    $('.container').toggleClass('box')
+})
+
+
+var att = $('#fname').attr('type', 'password')
+var att = $('#lname').attr('type')
+console.log(att)
+console.log(att)
+    })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

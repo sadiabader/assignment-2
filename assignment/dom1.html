@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   div{
+    border: 2px solid black;
+    margin: 50px auto 0 auto;
+   }
+#parent{
+    width: 500px;
+    height: 400px;
+}
+#child{
+    width: 300px;
+    height: 200px;
+}
+#grandchild{
+    width: 200px;
+    height: 80px;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <table>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Contact</th>
+<th>Address</th>
+</tr>
+
+<tr>
+<td>Shazil</td>
+<td>abc@gmail.com</td>
+<td>12345</td>
+<td>Liaquatabad</td>
+</tr>
+    </table>
+
+<!-- <input type="submit" id="btn" onclick="showName()"> -->
+<!-- <button onclick="showName()">submit</button> -->
+<!--<button class="btn"> submit </button> -->
+
+<div id="parent">
+      <h2>Parent</h2>
+    <div id="child">
+       <h2>child</h2>
+         <div id="grandchild">
+            <h2>Grandchild</h2>
+         </div>
+    </div>
+</div>
+
+<form>
+<label for="fname">First Name</label>
+<input type="text" id="fname">
+<br><br>
+<label for="lname">Last Name</label>
+<input type="text" id="lname">
+<br><br>
+<label for="age"> Age</label>
+<input type="number" id="age">
+<br><br>
+<label for="email"> Email </label>
+<input type="email" id="email">
+<br><br>
+<label for="pass"> Password </label>
+<input type="password" id="pass">
+<br><br>
+<input type="submit" id="btn" onclick="signup()">
+</form>
+
+
+<script>
+/*let btn = document.querySelector('.btn')
+
+
+let arr = document.querySelectorAll('table, th, td')
+let Border = () => {
+    arr.forEach(value => {
+        value.style.border = "2px solid black"
+    })}
+//btn.addEventListener('click', Border)
+btn.addEventListener('mouseover', Border)*/
+
+let parent, child, grandchild;
+
+parent = document.getElementById('parent')
+child = document.getElementById('child')
+grandchild = document.getElementById('grandchild')
+
+parent.addEventListener('click', () => {
+    console.log('parent')
+    parent.style.backgroundColor = "brown";
+},true)
+child.addEventListener('click', () => {
+    console.log('child')
+    child.style.backgroundColor = "aqua";
+},true)
+grandchild.addEventListener('click', () => {
+    console.log('grandchild')
+    grandchild.style.backgroundColor = "pink";
+},true)
+
+   let signup = () => {
+let fname = document.getElementById('fname').value;
+let lname = document.getElementById('lname').value;
+let age = document.getElementById('age').value;
+let email = document.getElementById('email').value;
+let pass = document.getElementById('pass').value;
+
+localStorage.setItem('FirstName', fname)
+localStorage.setItem('LastName', lname)
+localStorage.setItem('Age', age)
+localStorage.setItem('Email', email)
+localStorage.setItem('Password', pass)
+ }
+
+</script>
+</body>
+</html>

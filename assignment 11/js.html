@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var a = parseFloat(prompt("Enter the first number; "));
+var b = prompt("Enter the operator (+,-,*,/);");
+var c = parseFloat(prompt("Enter the second  number; "));
+var x;
+
+if(b == '+'){
+   x = a + c;
+}
+ else if(b == '-'){
+   x = a - c ;
+ }
+ else if(b == '*'){
+    x = a * c;
+ }
+else{
+    x = a / c;
+}
+    alert('your answer:' + x);
+
+
+
+    </script>
+
+</body> 
+</html>

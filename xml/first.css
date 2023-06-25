@@ -1,0 +1,19 @@
+#tab{
+width: 80px;
+height: 500px;
+text-align: center;
+font-size: 30px;
+text-transform: capitalize;
+margin: 0 auto;
+box-shadow: 30px 40px 50px 10px black;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+tr{
+    background-color: blue;
+    color: white;
+}
+
+

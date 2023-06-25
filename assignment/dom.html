@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-divice-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<table>
+ <div class="item1">
+
+<tr>
+   <th>Name</th>
+   <th>Email</th>
+   <th>Address</th>
+   <th>Contact</th>
+</tr>
+
+<tr>
+
+   <td>shazil</td>
+   <td>abc@gmail.com</td>
+   <td>nazimabad</td>
+   <td>12345</td>
+</tr>
+ </div>
+</table>
+
+    <div class="container">
+
+    <h1> First Heading</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+    </div>
+
+    <div id="container">
+
+        <h1> First Heading</h1>
+    
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+        </div>
+
+
+<section class="box">
+   <h1> Second Heading </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,  </p>
+</section>
+<input type="submit" onclick="data()">
+<script>
+
+//console.log(document.body);
+/*var container = document.getElementById('container');
+container.style.border = '2px solid black';
+container.style.backgroundColor = "pink"
+console.log(container);
+
+var con = document.getElementsByClassName('box')[1]
+var para = document.getElementsByTagName('p')[1]
+para.innerHTML = "This is third paragraph";
+//console.log(con)
+para.style.backgroundColor = "aqua"
+var para1 = document.getElementsByTagName('p')[0]
+para1.style.backgroundColor ="blue"
+     console.log(para)*/
+
+
+// querysalector
+//  querysalectorAll
+
+/*var container = document.querySelector('#container')
+console.log(container)
+// var a = container.innerText;
+//console.log(a);
+var box = document.querySelectorAll('h1')[1]
+let a = box.innerHTML = "This is inserted Heading"
+console.log(a)*/
+
+
+/*var head = document.querySelectorAll('.item1');
+
+function userdata(){
+   var box = document.querySelectorAll('th');
+
+   box[0].innerHTML = "Name";
+   box[1].innerHTML = "Email";
+   box[2].innerHTML = "Contact";
+   box[3].innerHTML = "Address"
+
+var th = document.querySelectorAll("th")
+   th.forEach((a) => {
+    a.style.borderWidth = "2px";
+    a.style.borderColor = "brown";
+    a.style.borderStyle = "solid";
+   }
+   )
+}
+userdata()
+
+var head1 = document.querySelectorAll('.item1');
+
+function userdata1(){
+   var box1 = document.querySelectorAll('td');
+
+   box1[0].innerHTML = "Aaiza";
+   box1[1].innerHTML = "abc@gmail.com";
+   box1[2].innerHTML = "12345";
+   box1[3].innerHTML = "Nazimabad"
+
+var th = document.querySelectorAll("td")
+   th.forEach((b) => {
+    b.style.borderWidth = "2px";
+    b.style.borderColor = "brown";
+    b.style.borderStyle = "solid";
+   }
+   )
+}
+userdata1()*/
+
+function data(){
+   console.log("Dear student")
+}
+data();
+
+//  arrow function
+
+var a = (name, address) => {
+   console.log(name + " " + address)
+}
+a("saima", "nazimad")
+
+//function data(){
+ //  document.write("hello")
+//}
+let submit = document.querySelector('#btn')
+console.log(submit);
+
+let data1 = () => {
+  document.write("dear class")
+}
+//submit.addEventListener('click', data1)
+//submit.addEventListener('click',() => {document.write("dear class")})
+//submit.addEventListener('mouseover', data1)
+
+var tablearr = document.querySelectorAll('table,th, td')
+console.log(tablearr)
+
+tablearr.forEach(tabborder => {
+   tabborder.style.border = "2px solid red";
+});
+let tab = document.querySelector('table')
+tab.style.borderCollapse = "collapes"
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

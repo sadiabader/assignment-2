@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin-top: 20px;
+   /* background-color: sandybrown;*/
+    color:  rgb(173, 68, 68);
+}
+.col-md-2{
+    margin-top: 10px;
+    font-family:"Sofia", sans-serif ;
+    padding-top: 10px;
+}
+.col-md-1 a:hover{
+    color: white;
+  background-color: rgb(173, 68, 68);
+}
+.col-md-1{
+    margin-top: 20px;
+    padding-top: 15px;
+    height: 20px;
+    width: auto;
+}
+.carousel-item img{
+    opacity: 0.6;
+}
+.carousel-item{
+    background-color:  rgb(173, 68, 68);
+    margin-top: 40px;
+}
+.carousel-caption h1{
+    font-size: 35px;
+    color: white;
+    font-family: "Sofia", sans-serif;
+    padding-bottom: 200px;
+}
+h1{
+    text-align: center;
+    color :  rgb(173, 68, 68) ;
+    margin-top: 40px;
+    font-family: "Sofia", sans-serif;
+}
+.col-md-4 img{
+    margin-left: 60px;
+    padding-top: 10px;
+    opacity: 0.5;
+}
+h3{
+    margin-left:40px ;
+    margin-top: 5px;   
+}
+.col-md-3{
+    margin-top: 40px;
+   /* margin-left: 60px;*/
+}
+.card:hover{
+    box-shadow: 5px 5px 30px 5px  rgb(173, 68, 68);
+}
+.card img{
+    padding: 10px;
+}
+.box{
+    margin-top: 25px;
+    width: 400px;
+    margin-left: 350px;
+    margin-top: 40px;
+    background-color: rgb(173, 68, 68);
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Sofia", sans-serif;
+  }
+  .col-md-3{
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  .col-md-3 img:hover{
+    box-shadow: 5px 5px 30px 5px rgb(173, 68, 68);
+    
+  }
+  #box{
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: auto;
+    background-color: rgb(173, 68, 68);
+    color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-top: 6px;
+    font-size: 20px;
+    text-align: center;
+  }

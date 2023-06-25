@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UFF-8"?>
+
+<xsd:schema xmlns:xsd="http:/wwww.w3.org/2001/XMLSchema">
+
+<xsd:element name="MESSAGE"type="xsd:string"/>
+
+</xsd:schema>
+
+<!--  sample xsd -->
+
+<xs:schema xmlns: xs="http:/wwww.w3.org/2001/XMLSchema"
+targetNameSpace="http;//www.abc.com"
+elementFormDefault="qualified">
+<xs:element name="mail">
+   <xs:comlexType>
+     <xs:sequence>
+<xs:element name="to" tupe="xsd:string"/>
+<xs:element name="from" tupe="xsd:string"/>
+<xs:element name="header" tupe="xsd:string"/>
+<xs:element name="body" tupe="xsd:string"/>
+</xs:sequence>
+  </xs:comlexType>
+    <xs:element>
+      </xs:schema>
+

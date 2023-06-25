@@ -1,0 +1,18 @@
+<xs:schema xmlns: xs="http:/wwww.w3.org/2001/XMLSchema"
+targetNameSpace="http;//www.abc.com"
+elementFormDefault="qualified">
+
+<xs:element name="books">
+<xs:element name="book">
+
+   <xs:comlexType>
+     <xs:sequence>
+<xs:element name="title" type="xsd:string"/>
+<xs:element name="author" type="xsd:string"/>
+<xs:element name="publisher" type="xsd:string"/>
+<xs:element name="edition" type="xsd:string"/>
+<xs:element name="price" type="xsd:string"/>
+</xs:sequence>
+  </xs:comlexType>
+    <xs:element>
+      </xs:schema>

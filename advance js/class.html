@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row" id="rootElement" >
+    
+        </div>
+     </div>
+    <div class="container-fluid">
+
+<input type="search" id="searchBar">
+<button id="btn"> submit</button>
+
+
+    </div>
+<script>
+
+(async function(){
+    let rootElement = document.getElementById("rootElement")
+    await fetch('/recipes.json').then(response => response.json()).then(data => {console.log(data)
+
+//       for(let i = 0; i < data.length; i++){
+// rootElement.innerHTML += `
+// <div class="col-md-4 col-sm-6 col-lg-3">
+// <div class="card">
+ 
+//   <div class="card-body">
+//     <h3 class="card-title"> ${data[i].title} </h3>
+//     <p class="card-text">  ${data[i].ingredients} </p>
+   
+//   </div>
+// </div>
+// </div>
+
+// `
+// } 
+})
+})()
+
+// (async function(){
+//     let rootElement = document.getElementById("rootElement")
+//     await fetch('/json/recipes.json').then(response => response.json()).then(result => {console.log(result)
+//   let searchBar = document.getElementById('searchBar')
+//   let btn = document.getElementById('btn')
+// // console.log(btn, searchBar)
+
+// function search(){
+// let query = searchBar.value
+// console.log(query)
+// // let result = data.forEach(recipe => {
+// //     return recipe.filter(function(recipes){
+// //         recipes.title.toLowerCase().includes(query)
+// //     })
+// //     console.log(result)
+// // });
+// }
+// btn.addEventListener('click', search)
+
+//     })
+// })()
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

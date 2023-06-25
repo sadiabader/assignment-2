@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    margin-left: 110px;
+}
+.nav-item:hover{
+    background-color:rgba(45, 50, 129, 0.767);
+    color: white;
+} 
+.carousel-item img{
+    opacity: 0.6;
+}
+.carousel-item{
+    background-color:rgba(45, 50, 129, 0.767);
+    
+}
+.card:hover{
+    box-shadow: 5px 5px 30px 5px rgba(45, 50, 129, 0.767);
+}
+.card img{
+    padding: 10px;
+}
+.row{
+    padding-left:200px ;
+}
+.col-md-3{
+    padding-top: 100px; 
+}
+.card-body h5{
+    height: 50px;
+    width: auto;
+    background-color:rgba(45, 50, 129, 0.767) ;
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.md-form{
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+.md-form input:hover{
+background-color:rgba(45, 50, 129, 0.767) ;
+color: white;
+}
+.mb-4 h2{
+  background-color:rgba(45, 50, 129, 0.767) ;
+  color: white;
+}
+.col-md{
+    margin-left: 200px;
+}
+.btn:hover{
+    background-color: rgba(45, 50, 129, 0.767) ;
+    color: white;
+  }
+  .md-form textarea:hover{
+    background-color: rgba(45, 50, 129, 0.767) ;
+    color: white;
+  }

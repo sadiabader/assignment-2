@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    
+<script>
+for(var i = 1; i <= 5; i++){
+    for(var j = 1; j <= i; j++){
+    document.write(j)
+}
+   document.write('<br>')
+}
+document.write('<br> <br>');
+
+/*var a = 1;
+var b = 1;
+do{
+    document.write(a);
+    a++;
+    b++;
+}while(b <= a)
+      (a <= 5)
+
+var x = 1;
+var y = 1;
+var z;
+while(y <= x)
+     z = x + y;
+     document.write(x + y + z + '<br>')
+    y++;*/
+    
+    
+
+
+for(age =18; age <= 25; age++){
+    document.write(age + '<br>')
+    if(age ==20){
+        document.write('continue the statement <br>');
+        continue;
+    }
+}
+document.write('<br> <br>')
+
+
+var array = new Array(4);
+array [0] = "shazil";
+array [1] = "saima";
+array [2] = "faiz";
+array [3] = "Fatima";
+document.write(array[2]);
+
+document.write('<br> <br>');
+
+
+
+
+var array = ["Shazil", "Sadia", "Asma", "Hammad", "Saima", "University", "College"];
+for(i = 0; i <= 5; i++){
+    document.write(i + ')' + array[i] + '<br>');
+}
+document.write('<br> <br>')
+
+var values = ["Sidrah", "Faiza", "Naima"];
+var b = values.concat("Hammad", "Shazil", "Zoya")
+b.push("Aaiza", "Zoya")
+b.sort();
+var c = b.join(" . ")
+document.write(c);
+
+
+
+document.write('<br><br>')
+var mularray = [["Asma", "23", "Indus"],
+                ["Faiza", "20", "KU"],
+                ["Filza", "25", "Jinnah"],
+                ];
+for(i = 0; i < 3; i++){
+
+    for(j = 0; j < 3; j++){
+        document.write(mularray[i][j] + '<br>');
+    }
+}
+document.write('<br> <br>')
+
+document.write("<table border ='1px' cellpadding '10px'> <tr><th> Names </th><th> Age </th><th> University </th>");
+
+for(i = 0; i < mularray.length; i++){
+document.write('<tr>');
+    for(j = 0; j < mularray[i].length; j++){
+       document.write('<td>' + mularray[i][j] + '</td>')
+    }
+}
+document.write("</table>")
+
+// keyword function name(){
+// statment  ;  
+//}
+document.write("<br>")
+document.write("<h2> Function </h2> <br>")
+function data(){
+    document.write("dear student <br>");
+}
+data();
+
+function add(){
+    var num1 = 4;
+    var num2 = 6;
+    var result = num1 + num2;
+    document.write(result + '<br>');
+}
+add();
+
+/*function add(){
+    var num1 = parseInt(prompt("Enter your number"));
+    var num2 = parseFloat(prompt("Enter your number"));
+     var result = num1 + num2;
+     document.write(result)
+}
+add();*/
+
+function sub(number1, number2, number3){
+    document.write(number1 - number2 - number3);
+}
+document.write("your first subtraction is : ")
+sub(6, 8, 10);
+document.write(" <br> your second subtraction is : ")
+sub(3, 1, 20);
+document.write("<br>")
+sub(4, 4, 4);
+document.write("<br>");
+
+
+function multiply(numone, numtwo){
+     return (numone * numtwo)
+}
+var a = multiply(4,4);
+document.write(a + "<br>");
+
+/*function data(parameter1, parameter2){
+    document.write(parameter1 + parameter2)
+}
+data("Sadia", "Bader")
+
+function data(parameter1="Sadia", parameter2="Bader"){
+     document.write(parameter1 + parameter2)
+}
+data();*/
+
+function data(parameter1="insert the arguments1", parameter2="insert the arguments2"){
+    document.write(parameter1 + parameter2)
+}
+data("Shazil", "Asma");
+
+
+</script>
+
+
+
+
+</body>
+</html>

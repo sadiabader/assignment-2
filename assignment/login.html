@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<body>
+
+
+    <form action="">
+    <label for="email"> Email </label>
+    <input type="email" id="email1">
+    <br><br>
+    <label for="pass"> Password </label>
+    <input type="password" id="pass1">
+    <br><br>
+    <input type="submit" id="btn" onclick="login()">
+    </form>
+    
+
+<script>
+
+let login = () => {
+
+let email1 = document.getElementById('email1').value;
+let pass1 = document.getElementById('pass1').value;
+
+let email2 = localStorage.getItem('Email')
+let pass2 = localStorage.getItem('Password')
+
+if(email1 == email2 && pass1 == pass2){
+    alert('welcome to my website');
+}
+else{
+    alert("invalid username/ password");
+}
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

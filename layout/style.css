@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 800px;
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 280px;
+    border: 2px solid black;
+    background-image: url(images/weight-lifting-background-image-artistic-260nw-273182789.webp);
+   background-size: cover;
+   color: white;
+}
+
+.item{
+    height: 100px;
+    width: 900px;
+display: flex;
+padding-left: 100px;
+text-decoration: underline;
+
+}
+.item p{
+    padding-top: 20px;
+}
+.item-1{
+    display: flex;
+    padding-left: 150px;
+    padding-top: 20px;
+    gap: 20px;
+}
+.item-2{
+    height: 200px;
+}
+.item-2 h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.item-3{
+    background-color: white;
+text-align: center;
+opacity: 0.3;
+height: 300px;
+width: 800px;
+margin-left: 280px;
+}
+.item-3 h3{
+    padding-top: 30px;
+}
+.col{
+    display: flex;
+    gap: 80px;
+    padding-left: 180px;
+    padding-top: 50px;
+}
+

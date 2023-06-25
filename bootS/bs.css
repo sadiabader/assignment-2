@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.carousel-item img{
+    height: 550px;
+    opacity: o.9;
+}
+.carousel-item{
+    background-color: aquamarine;
+}
+.carousel-item h1, .carousel-item p{
+    font-size: 35px;
+    color: black;
+}
+.navbar{
+    background-color: rgba(7, 49, 110, 0.9);
+} 
+.nav-link{
+    align-items: center;
+}
+
+.navbar-brand{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-body{
+    background-color: rgba(74, 136, 230, 0.9);
+}
+.card:hover{
+    box-shadow: 5px 5px 30px 5px;
+}
+.card img{
+    padding: 5px;
+}
+
+
+
+

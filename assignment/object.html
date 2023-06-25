@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in js</title>
+</head>
+<body>
+    <script>
+// first method to define the object
+
+var data = new Object();
+data.name = "shazil";
+data.age = "4";
+data.gender = "male";
+
+console.log(data);
+document.write(data.age + "<br>" + data.name + "<br>" + data.gender + "<br>")
+
+
+var car ={
+    color : "Red",
+    make : "toyota",
+    variant : "Altis Grand CVT",
+    number : "Islamabad",
+    methods : ["run", "stop"]
+};
+console.log(car);
+//document.write(car.color)
+for(var i in car){
+    document.write(car[i] + "<br>");
+}
+
+/*var userdata = {
+    name : "Sadia",
+    email : "abc@gmail.com",
+    personal_info : {
+        qualification : "Hifz-ul-Quran",
+        madasa : "Iqra rozat-ul-atfal",
+        Gender : "female",
+        address : {
+            permanent_add : "liaquatabad",
+            temporary_add : "Karachi"
+        }
+    }
+}
+
+console.log(userdata)
+document.write(userdata.personal_info.address.temporary_add)*/
+
+
+// object created by using function without argument
+function userdata(){
+    this.name = "ali";
+    this.age = "30";
+    this.email = "abc@gmail.com";
+}
+
+data = new userdata();
+console.log(data.name, data.age)
+
+
+// object created by using function with argument
+
+function user_data(name, age, email){
+    this.name = name;
+    this.age = age;
+    this.email = email;
+}
+all_data = new user_data("sidra", "20", "ali@gmail.com");
+console.log(all_data);
+//document.write(ali_data)
+
+    </script>
+</body>
+</html>
